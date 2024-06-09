@@ -27,8 +27,6 @@ namespace FileLineValidator.Core.Services
         {
             _logger.LogInformation("Starting to process file...");
 
-            _invalidLines.Clear();
-
             var fileStopwatch = Stopwatch.StartNew();
 
             var lines = content.Split(_lineEndings, StringSplitOptions.RemoveEmptyEntries);

@@ -9,7 +9,7 @@ services.AddControllers();
 services.AddEndpointsApiExplorer();
 services.AddSwaggerGen();
 
-services.AddSingleton<IContentValidatorService, ContentValidatorService>();
+services.AddScoped<IContentValidatorService, ContentValidatorService>();
 services.AddSingleton<IValidationRule, FirstNameValidationRule>();
 services.AddSingleton<IValidationRule, AccountNumberValidationRule>();
 
